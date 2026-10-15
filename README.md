@@ -6,13 +6,6 @@ BTS SIO
 
 <aside>
 
-# Sommaire
-
-</aside>
-
-<aside>
-❗
-
 # C’est quoi PfSense ?
 
 </aside>
