@@ -18,7 +18,6 @@ Il s’administre assez facilement via une interface web et permet de gérer la 
 - Sécurité et accès distant : VPN, détection d’intrusions
 
 <aside>
-❗
 
 # Topologie
 
@@ -33,9 +32,6 @@ Il s’administre assez facilement via une interface web et permet de gérer la 
 
 </aside>
 
-<aside>
-❗
-
 # Contexte
 
 </aside>
@@ -44,7 +40,6 @@ La société Vikor désire installer un serveur Web au sein de son architecture 
 Afin de sécuriser au maximum son réseau ,le choix de PfSense a été fait en raison de sa flexibilité et du nombre de fonctionnalités disponibles.
 
 <aside>
-❗
 
 # Installation du PfSense
 
@@ -67,7 +62,6 @@ Puis nous finalisons l’installations en suivant les étapes jusqu’à arriver
 ![image.png](image%203.png)
 
 <aside>
-❗
 
 # Connection du serveur web à la DMZ
 
@@ -86,14 +80,12 @@ Puis attribuer une ip statique au serveur web avec la même adresse réseau que 
 Pour l’instant nous ne pouvons pas ping les deux machines entre elles mais c’est tout à fait normal car l’interface DMZ n’est pas encore configurer sur le PfSense.
 
 <aside>
-❗
 
 # Configuration PfSense
 
 </aside>
 
 <aside>
-📌
 
 ## Client d’administration
 
@@ -108,7 +100,6 @@ puis attribuer une adresse ip à la VM cliente avec la même adresse réseau que
 ![image.png](image%207.png)
 
 <aside>
-📌
 
 ## Configuration de l’interface DMZ
 
@@ -127,7 +118,6 @@ Sans oublier de configurer l’adresse ip de l’interface avec la même adresse
 ![image.png](image%2010.png)
 
 <aside>
-❗
 
 # Configuration des règles
 
@@ -136,7 +126,6 @@ Sans oublier de configurer l’adresse ip de l’interface avec la même adresse
 Nous voulons accéder à notre serveur web depuis l’interface LAN et WAN du PfSense, pour cela il va falloir établir des règles qui vont permettre au machines des différentes interfaces d’accéder au serveur LAMP qui est située dans la DMZ.
 
 <aside>
-📌
 
 ## Règles du WAN
 
@@ -161,7 +150,6 @@ ET voila nous pouvons voir que lorsque l’on entre l’adresse IP de l’interf
 ![image.png](image%2014.png)
 
 <aside>
-📌
 
 ## Règles du LAN
 
@@ -182,9 +170,6 @@ Avec cette simple règles on peut accéder directement au serveur web depuis le 
 
 </aside>
 
-<aside>
-❗
-
 # Contexte
 
 </aside>
@@ -192,7 +177,6 @@ Avec cette simple règles on peut accéder directement au serveur web depuis le 
 Vous venez d’installer PfSense pour la société LSL avec accès au serveur web situé dans la DMZ .Le DSI de l’entreprise souhaite maintenant pouvoir monitorer via un navigateur le maximum d’informations concernant le réseau LAN.
 
 <aside>
-❗
 
 # Monitoring : ntopng
 
@@ -211,14 +195,10 @@ Une fois cela fait il suffit de taper l’adresse ip de l’interface LAN suivie
 ![image.png](a22ce6c8-9815-4c14-9ca6-0a4b950f13a9.png)
 
 <aside>
-❗
 
 # Mise en place du bureau à distance
 
 </aside>
-
-<aside>
-📌
 
 ## Contexte
 
@@ -227,7 +207,6 @@ Une fois cela fait il suffit de taper l’adresse ip de l’interface LAN suivie
 Le DSI souhaite maintenant installer un serveur Windows dans la DMZ accessible en bureau à distance via le protocole RDP sur le port par défaut, et ce depuis internet . Par mesure de sécurité vous utiliserez un port différent de votre choix associé à l’adresse WAN du PFSense avec redirection du flux vers l’adresse du serveur Windows associé au port par défaut .
 
 <aside>
-📌
 
 ## Configuration de la machine Windows server
 
@@ -242,7 +221,6 @@ Puis il faut simplement activer le bureau à distance dans les paramètre de la 
 ![image.png](image%2020.png)
 
 <aside>
-📌
 
 ## Règles sur le PfSense
 
