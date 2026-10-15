@@ -26,7 +26,6 @@ Il s’administre assez facilement via une interface web et permet de gérer la 
 ![](images/image.png)
 
 <aside>
-📎
 
 # Chapitre 1 : DMZ
 
