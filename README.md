@@ -23,7 +23,7 @@ Il s’administre assez facilement via une interface web et permet de gérer la 
 
 </aside>
 
-![image.png](image.png)
+![](images/image.png)
 
 <aside>
 📎
