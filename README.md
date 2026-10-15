@@ -5,7 +5,6 @@ Loïc Mouthuy
 BTS SIO
 
 <aside>
-❗
 
 # Sommaire
 
